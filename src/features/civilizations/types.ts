@@ -7,10 +7,12 @@ export type Civilization = {
     army_type: string;
     unique_unit: string[];
     unique_tech: string[];
-    team_bonus: string[];
+    team_bonus: string;
+    civilization_bonus: string[];
 }
 
 export enum Status {
     LOADING = 'loading',
-    IDLE = "idle"
+    IDLE = 'idle',
+    ERROR = 'error'
 }
